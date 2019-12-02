@@ -1,0 +1,3 @@
+#para gerar um executável contendo as dependências 
+
+dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true
