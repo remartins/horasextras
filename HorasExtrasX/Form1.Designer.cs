@@ -42,9 +42,9 @@
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Location = new System.Drawing.Point(8, 74);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(175, 19);
+            this.checkBox1.Size = new System.Drawing.Size(255, 19);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Realizar busca na pasta local";
+            this.checkBox1.Text = "Realizar busca na pasta local (arquivos .xlsx)";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
