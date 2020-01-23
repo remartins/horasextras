@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
+
 
 namespace HorasExtrasX
 {
@@ -38,8 +38,13 @@ namespace HorasExtrasX
 
                             if (Char.IsNumber(evento, 0))
                             {
+                                
                                 string horas = evento.Substring(0, 5);
-                                string data = row.GetCell(0).ToString();
+                                string data =  row.RowNum.ToString();
+
+                                if ( row.GetCell(0) != null) {
+                                    data = row.GetCell(0).ToString();
+                                }
 
                                 if (evento.Contains("Débito Banco Horas"))
                                 {
