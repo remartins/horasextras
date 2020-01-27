@@ -42,11 +42,6 @@ namespace HorasExtrasX
                                 string horas = evento.Substring(0, 5);
                                 string data = row.RowNum.ToString();
 
-                                // if (row.GetCell(0) != null)
-                                // {
-                                //     data = row.GetCell(0).ToString();
-                                // }
-
                                 if (evento.Contains("Débito Banco Horas"))
                                 {
                                     mapa.Add(data, "-" + horas);
