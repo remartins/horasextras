@@ -36,7 +36,7 @@ namespace HorasExtrasX
                         {
                             string evento = row.GetCell(INDEX_CELL_EVENTOS).ToString();
 
-                            if (Char.IsNumber(evento, 0))
+                            if (evento.Trim() != "" && Char.IsNumber(evento, 0))
                             {
 
                                 string horas = evento.Substring(0, 5);
